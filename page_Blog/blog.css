@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@300;400;600;800&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Sans:wght@400;600;800;900&display=swap');
+/* font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
+font-family: 'Noto Sans Symbols', sans-serif; */
+
+
+*,*::before,*::after{
+    /* outline: solid 1px red; */
+    box-sizing: border-box;
+    position: relative;
+}
+/* -------------------------------- */
+html,body{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    color: #333;
+    box-sizing: border-box; 
+}
+/* h4 */
+.title_sm{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.title_md{
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+/* -------------------------------- */
+
+.index{
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    line-height:1.5;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    position: relative;
+
+}
+/* -------------------------------- */
+/* header */
+.header{
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+}
+    
+
+
+.banner{
+    max-width: 1400px;
+    font-family: 'Noto Sans Symbols', sans-serif;
+    display: flex;
+    padding: 12px 80px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.banner_left{
+    display: flex;
+    align-items: end;
+    font-size: 14px;
+    
+}
+
+.banner_left>img{
+    padding-right: 20px;
+}
+.banner_left p{
+    padding-right: 20px;
+}
+.banner_right{
+    display: flex;
+}
+ul.catalog{
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+   
+}
+.catalog a{
+    text-decoration: none;
+}
+.pagename{
+    display: block;
+    padding: 0 16px;
+    color:#333;
+    
+}
+.nowPage{
+    position: relative;
+}
+.nowPage:after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    top: 36px;
+    
+}
+.btn{
+
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 14px;
+    display: block;
+    border-radius:4px ;
+    font-weight: 800;
+    text-decoration: none;
+    
+}
+.btn.logIn{
+    padding: 6px 12px;
+    margin-right: 20px;
+    background-color: #4d4d4d;
+    color:#f5f5f5;
+}
+.btn.signUp{
+    padding: 6px 12px;
+    background-color: #E0B327;
+}
+
+
+/* main-vision */
+.masterVision{
+    max-width:1400px;
+    background-image: url(./img/top_bg.png);
+    padding: 192px 80px 106px;
+}
+
+
+.title{
+    font-size: 80px;
+    font-weight: 800;
+    color:#fff;
+    margin-right: 20px;
+}
+
+
+/* article */
+/* main */
+.main{
+    max-width:1400px;
+    box-sizing:border-box;
+    padding: 80px;
+    border-radius: 40px;
+    background-color: #f5f5f5;
+    position: relative;
+    margin-top: -40px;
+
+
+    overflow: hidden;
+    z-index: 5;
+}
+
+.blog{
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    margin-bottom: 52px;
+    align-items: start;
+}
+.card{
+    background-color: #fff;
+    width: 30%;
+    margin-right: 24px;
+    border-radius: 16px;
+    border: solid 1px #eee;
+    box-shadow: 0px 0px 20px rgba(238, 238, 238,.8);
+    z-index: 10;
+
+    transition:0.5s;
+}
+.card:hover{
+    box-shadow: 0px 0px 40px rgba(133, 133, 133, 0.2);
+    z-index: 10;
+    transform: scale(105%) ;
+    transform:translate( 4px,4px);
+    
+}
+.blog_pic{
+    font-size: 0;
+    /* position: absolute; */
+    /* right: 0; */
+    overflow: hidden;
+    border-radius: 16px;;
+}
+
+
+.stars,.links,.booking,.pic{
+    font-size: 0;
+}
+.stars{
+    margin: 40px 40px 20px 40px;
+    
+}
+.card>p{
+    margin: 0 40px ;
+    margin-bottom: 20px;
+}
+.author{
+    margin: 0 32px ;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.author .name{
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+.person_info{
+    display: flex;
+}
+
+.author .pic{
+   margin-right: 16px;
+}
+.links{
+    display: flex;
+    align-items: end;
+}
+.links .share{
+    margin-left: 16px;
+}
+a.booking{
+    display: flex;
+    margin-top: 32px;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 0 0 16px 16px;
+    background-color: #E0B327;
+    text-decoration: none;
+    color:#333;
+    transition:0.5s;
+}
+a.booking:hover{
+    box-shadow: inset 0 2px  2px rgba(87, 86, 86, 0.2);
+    background-color: #333;
+    color:#eee;
+}
+
+
+.booking img{
+    margin-right: 20px;
+}
+
+.booking .title_sm{
+    margin-bottom: 0;
+}
+
+/* section*/
+/* bottom  */
+.bottom{
+    background-image: url(./img/bottom_bg.png);
+    margin-top: -20px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 115px 0;
+    color: #fff;
+    text-shadow:2px 0px 10px rgba(87, 86, 86, 0.2);
+
+}
+.customer_service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.bottom .customer_service .title_sm{
+    
+}
+.bottom .person_detail{
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   justify-content: space-between;
+
+}
+
+.bottom .person_info{
+    display: flex;
+    align-items: center;
+    
+}
+
+.bottom .btn{
+    text-shadow:none;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+   
+}
+.bottom .btn .title_sm{
+    margin-bottom: 0;
+    
+}
+.bottom .person_info .pic{
+    margin-right: 40px;
+    
+    
+}
+.bottom .person_info .name{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    
+}
+
+/* footer */
+.footer{
+    background-color: #000;
+    max-width: 1400px;
+    padding: 80px;
+    box-shadow: 0 -10px 40px rgb(238, 238, 238, .2) ;
+    color:#f5f5f5
+}
+.footer > img{
+    margin-bottom: 20px;
+}
+.sourseInfo{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+ul.sourseLink h4{
+    margin-bottom: 10px;
+}
+ul.sourseLink a{
+    text-decoration: none;
+    color: #f5f5f5;
+    padding: 10px 0;
+    display: block;
+}
+.business_hours{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.business_hours h4{
+    margin: 0;
+    padding: 0;
+}
+.business_hours p{
+    line-height: 1.6;
+}
+
+.media_logo{
+    display: flex;
+}
+.media_logo a{
+    font-size: 0;
+    display: block;
+    margin-right: 40px;
+    
+   
+}
+.media_logo img{
+    width: 36px;
+    height: 36px;
+}
+
+.remind{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.remindInfo{
+    display: flex;
+}
+.remindInfo p{
+    margin-right: 20px;
+}
+.remindInfo a{
+    margin-right: 20px;
+}
+.backToTop{
+    display: flex;
+    text-decoration: none;
+    color:#f5f5f5;
+}
+.backToTop img{
+    margin-left: 20px;
+}
+

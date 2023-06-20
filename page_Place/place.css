@@ -28,6 +28,10 @@ html,body{
     line-height: 1.2;
     font-weight: 700;
 }
+a{
+    text-decoration: none;
+}
+/* 
 /* -------------------------------- */
 
 .index{
@@ -414,7 +418,6 @@ ul.detail{
     bottom: -10%;
     right: 0;
     z-index: 10;
-
 }
  
 /* footer */
@@ -485,6 +488,7 @@ ul.sourseLink a{
 }
 .remindInfo a{
     margin-right: 20px;
+    color: #eee;
 }
 .backToTop{
     display: flex;

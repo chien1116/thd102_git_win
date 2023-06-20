@@ -40,6 +40,9 @@ html,body{
     line-height: 1.2;
     font-weight: 700;
 }
+a{
+    text-decoration: none;
+}
 
 /* -------------------------------- */
 /* header */
@@ -362,7 +365,6 @@ iframe {
 /* footer */
 .footer{
     max-width: 1400px;
-    margin-top: 40px;
     padding: 80px;
     box-shadow: 0 -10px 40px rgb(238, 238, 238, .2) ;
 }
@@ -426,6 +428,7 @@ ul.sourseLink a{
 }
 .remindInfo a{
     margin-right: 20px;
+    color:#eee;
 }
 .backToTop{
     display: flex;

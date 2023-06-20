@@ -27,7 +27,9 @@ html,body{
     font-size: 16px;
     line-height:1.5;
     overflow: hidden;
-
+}
+a{
+    text-decoration: none;
 }
 /* -------------------------------- */
 /* header */
@@ -46,7 +48,7 @@ html,body{
     padding: 12px 80px;
     justify-content: space-between;
     align-items: center;
-    
+     
 }
 .banner_left{
     display: flex;
@@ -113,7 +115,6 @@ ul.catalog{
 }
 /* masterVision */
 .masterVision{
-    
     display: flex;
     flex-direction: column;
     background-image: url(./img/header_bg.jpg);
@@ -446,6 +447,7 @@ ul.sourseLink a{
 }
 .remindInfo a{
     margin-right: 20px;
+    color: #eee;
 }
 .backToTop{
     display: flex;

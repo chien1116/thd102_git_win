@@ -28,6 +28,9 @@ html,body{
     line-height: 1.2;
     font-weight: 700;
 }
+a{
+    text-decoration: none;
+}
 /* -------------------------------- */
 
 .index{
@@ -206,7 +209,14 @@ ul.catalog{
 .rule {
     margin-bottom: 80px;
 }
-
+.rule a{
+    font-weight: 500;
+    color: #000;
+    transition:0.5s;
+}
+.rule a:hover{
+color:#E0B327;
+}
 /* section */
 /* order */
 .order_info .title_sm{
@@ -468,6 +478,7 @@ ul.sourseLink a{
 }
 .remindInfo a{
     margin-right: 20px;
+    color: #eee;
 }
 .backToTop{
     display: flex;

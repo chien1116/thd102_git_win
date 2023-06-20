@@ -28,6 +28,9 @@ html,body{
     line-height: 1.2;
     font-weight: 700;
 }
+a{
+    text-decoration: none;
+}
 /* -------------------------------- */
 
 .index{
@@ -384,6 +387,7 @@ ul.sourseLink a{
 }
 .remindInfo a{
     margin-right: 20px;
+    color:#eee;
 }
 .backToTop{
     display: flex;

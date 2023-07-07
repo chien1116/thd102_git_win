@@ -1,0 +1,395 @@
+/* =========== 共用屬性 ============= */
+@import url(./header.css);
+@import url(./footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@300;400;600;800&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Sans:wght@400;600;800;900&display=swap');
+/* font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
+font-family: 'Noto Sans Symbols', sans-serif; */
+
+
+*,*::before,*::after{
+    outline: solid 1px red;
+    box-sizing: border-box;
+}
+
+/* -------------------------------- */
+html,body{
+    max-width: 1920px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+.index{
+    width:100%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height:1.5;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
+}
+
+.bigText{
+    font-size:60px;
+    font-weight: 800;
+    font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
+}
+.title_sm{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
+}
+.title_md{
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
+}
+
+
+
+
+/* =========== index 首頁 ============= */
+.header{
+    /* max-width: 1400px; */
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* masterVision */
+.masterVision{
+    margin-top:50px ;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./img/header_bg.jpg);
+    background-position: right 0 0;
+    background-size:  cover ;
+    background-repeat: no-repeat;
+    padding:10%;
+    padding-bottom: 5.5%;
+}
+
+.visit{
+    margin-top: 20px;
+    font-size: 20px;
+    width: 260px;
+    text-align: center;
+    text-decoration: none;
+    /* margin-bottom: 80px; */
+}
+.header_logo_bg>img{
+    display: block;
+}
+
+.infoBlock{
+    display: flex;
+    max-width:1400px;
+    margin: 5.5% 10%;
+    /* padding: 5.5% 10%; */
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+}
+.infoBlock .image{
+    flex:1;
+    font-size: 0;
+    min-width: 268px;
+    overflow: hidden;
+}
+.infoBlock img{
+    width:100%;
+}
+.infoBlock .text{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.infoBlock h1{
+    font-size:36px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.infoBlock p{
+    padding-top: 20px;
+    font-weight: 400;
+}
+
+/* main_section1 */
+/* how we work*/
+.main_section1{
+    min-width:332px; 
+    width:100%;
+    padding: 5.5% 10%;
+    display: flex;
+    justify-content: space-between;
+
+    /* flex-direction: column; */
+ 
+}
+.main_section1 .left{
+    width: 45%;
+}
+
+.main_section1 .right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.main_section1 p{
+    padding-left: 5.5%;
+}
+
+.btns{
+    display: flex;
+    cursor: pointer;
+    white-space: nowrap; /*文字不換行*/
+    flex-wrap: wrap;
+    padding-left: 5.5%;
+}
+.btn.more{
+    margin-right: 20px;
+    min-width: 136px;
+    margin-top: 20px;
+}
+
+.btn.signup{
+    background-color: #E0B327;
+    margin-top: 20px
+
+}
+
+.btns a{
+    display: block;
+    text-align: center;
+}
+
+/* main_section2 */
+/* WHAT WE SUPPLY */
+.main_section2{
+    width:100%;
+    /* max-width: 1400px; */
+    background-image: url("./img/body_pic2_bg.png");
+    padding: 5.5% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.infoText{
+    max-width: 400px;
+    min-width: 272px;
+}
+.main_section2 p{
+    margin-top: 40px;
+}
+.success{
+    display: flex;
+    text-align: center;
+    margin-top: 40px;  
+    flex-wrap: wrap; 
+}
+.success > div{
+    margin-right: 10%;    
+}
+.success .title_sm{
+    padding-bottom: 20px;
+    margin-bottom: 0;
+} 
+
+
+/* main_section3 */
+/* ad */
+.main_section3{
+    width:100%;
+    /* max-width: 1400px; */
+    background-color: #fff;
+    color: black;
+    border-radius: 60px;
+    padding: 5.5% 10%;
+    justify-content: space-between;
+}
+.main_section3 .title_md{
+    text-align: center;
+    margin-bottom: 5.5%;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.content .left{
+    display: flex;
+    flex-direction: column;
+    flex:2;
+    justify-content: start;
+    padding: 0 5.5%;
+    padding-bottom: 20px;
+    
+}
+.infoList{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black; 
+    margin: 20px 0;
+}
+.infoList li{
+    padding: 4px 0;
+    white-space: nowrap;
+}
+ul.detail{
+    padding-left: 10px;
+}
+.btn.booking{
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    padding: 6px;
+    font-weight: 300;
+    background-color: #333;
+    color:#fff;
+    border-radius: 8px;  
+}
+.content .image{
+    flex-grow: 1;
+    font-size: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    max-height: 446px;
+    
+}
+.content img{
+    width: 100%;
+}
+/* card */
+.service{
+    width:100%;
+    /* max-width: 1400px; */
+    padding: 5.5% 10%;
+}
+ul.cards{
+    display: flex;
+    justify-content:start;
+    position: relative;
+}
+ul.cards::before{
+    content: "";
+    display: block;
+    width: calc(100% + 20vw);
+    height: 100%;
+    background: linear-gradient(90deg, rgba(3,3,3,1) 0%, rgba(3,3,3,0.5) 10%, rgba(3,3,3,0) 20%, rgba(3,3,3,0) 80%, rgba(3,3,3,0.5) 90%, rgba(3,3,3,1) 100%);
+    position: absolute;
+    left: -10vw;
+    z-index: 10;
+    opacity:0.8;
+    pointer-events: none;
+}
+
+.subTitle{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.subTitle img{ 
+    margin-right: 40px;    
+}
+
+.card_img{
+    font-size: 0;
+    overflow: hidden;
+    border-radius:16px 16px 0 0;
+}
+li.card{
+    max-width: 100%;
+    margin-right: 40px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 16px;
+    border: solid 2px #eee;
+}
+
+.service_info{
+    z-index: 5;
+}
+.service_info h4{
+    padding: 20px 40px;
+    margin: 0;
+    border-top: solid 2px #eee;
+    border-bottom: solid 2px #eee;
+    
+}
+.service_info p{
+    padding: 10px 40px;
+    border-top: solid 2px #eee;
+    color: #747474;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    border-top: solid 2px #eee;
+    color: #747474;
+    
+}
+.tag{
+    font-weight: 600;
+}
+.likeAndShare{
+    display: flex;
+ 
+}
+.likeAndShare a{
+    text-decoration: none;
+    display: flex;
+    margin-left:20px;
+    color:#333;
+}
+.likeAndShare a:hover{
+    color:#E0B327;
+}
+
+.likeAndShare img{
+    display: block;
+    margin-right:12px;
+}
+
+
+
+
+
+/* JS用 */
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+
+/* ========= 斷點 ======== */
+@media (max-width: 1080px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 414px) {
+    
+}

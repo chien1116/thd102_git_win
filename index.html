@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="./reset.css">
@@ -15,9 +16,92 @@
 
 
 <body>
+    <!-- login&signup Page -->
+    <div class="form_background">
+        <form id="login" class="form login" action="" method="post">
+            <h2 class="title_sm logTitle">Log In</h2>
+            <div class="form_img">
+                <img  src="./img/signUp_logo.png" alt="">
+            </div>
+            
+        
+            <label class="field">
+               <img src="./img/icon_account.svg" alt="">
+               <input type="text" placeholder="User Name or E-mail Address " name="username" id="usernameLogIn" class="input">
+            </label>
+          
+            <label class="field">
+                <img src="./img/icon_password.svg" alt="">
+               <input type="password" placeholder="Password" name="password" id="passwordLogIn" class="input">
+            </label>
+
+
+            <div class="separate">
+                <div class="border"></div>
+                <p>or</p>
+                <div class="border"></div>
+            </div>
+            
+
+            <!-- 待開發 連結社群帳號 -->
+            <a href="https://www.facebook.com/" target="_blank" id="fbAccount" class="socialAccount">
+                <img src="./img/icon_fb_color.png" alt="">
+                <p>
+                    Continue with Facebook
+                </p>
+            </a>
+        
+            <a href="https://www.google.com.tw/" target="_blank" id="googleAccount" class="socialAccount">
+                <img src="./img/icon_google_color.svg" alt="">
+                <P>
+                    LOG IN with Google
+                </P> 
+            </a>
+     
+
+        
+            <p class="accountToggle">Don't have an account?</p>
+        
+            <input type="submit" class="logButton" value="Continue">
+        </form>
+        <!-- signup -->
+        <form id="signUp" class="form signUp" action="" method="post">
+            <h2 class="title_sm logTitle">Sign Up</h2>
+            <div class="form_img">
+                <img  src="./img/signUp_logo.png" alt="">
+            </div>
+        
+            <label class="field">
+                <img  src="./img/icon_account.svg" alt="">
+                <input type="text" placeholder="User Name or E-mail Address " name="signusername" id="usernameLogIn" class="input">
+            </label>
+        
+            <label class="field">
+                <img src="./img/icon_password.svg" alt="">
+                <input type="password" placeholder="Password" name="signpassword" id="passwordLogIn" class="input">
+            </label>
+
+            <label class="field">
+                <img src="./img/icon_password.svg" alt="">
+                <input type="password" placeholder="Enter Your Password Again" name="signpassword" id="passwordLogIn" class="input">
+            </label>
+        
+            <p class="accountToggle">Have an account?</p>
+        
+            <input type="submit" class="logButton" value="Sign Up">
+
+            <p class="remindText">註冊即表示您已閱讀並同意 
+                <a href="./page_FAQ/">服務條款</a> 
+                <span>及</span> 
+                <a href="./page_FAQ/">隱私權政策</a>
+            </p>
+                
+        </form>
+    </div>
+    <!-- ================================================== -->
     <!-- index -->
     <div class='index'>
-
+        
     <!-- header -->
     <div class="header">
        
@@ -451,7 +535,7 @@
 
   </index>
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="./index.js"></script>
 </body>
 </html>

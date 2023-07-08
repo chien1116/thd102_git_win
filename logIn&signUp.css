@@ -1,0 +1,186 @@
+
+/* Log In / Sign Up */
+.form_background{
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 80;
+    padding: 60px 10%;
+    overflow-y: scroll ;
+
+    display: none;
+    /* display: block; */
+
+}
+/* 不佔空間的滾動調 */
+.form_background::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+  }
+
+
+
+.form {
+    border: 1px solid rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    max-width: 464px;
+    min-width: 320px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 0 auto;
+
+}
+.form_img{
+    max-width: 248px;
+    padding-left: 10%;
+    margin-bottom: 40px;
+    font-size: 0;   
+
+}
+.form_img img{
+    width: 100%;
+}
+
+.title_sm.logTitle {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;    
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.field,.socialAccount {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 36px;
+}
+
+.field img{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+.input{
+    width: 100%;
+    
+    font-size: 14px;
+    text-indent: 10px;
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: 10px 0;
+    margin-left: 10px;
+    transition: 300ms;
+    background-color: rgba(255,255,255,0);
+
+}
+a.socialAccount{
+    background-color:#e3e3e3;
+    display: flex;
+    padding-left: 20px;
+    border:none;
+    transition:0.5s;
+    
+}
+a.socialAccount:hover {
+    background-color: #aaa;
+    color: #fff;
+}
+a.socialAccount p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    display: block;
+    margin-left: 20px;
+}
+
+.input:focus{
+    background-color:#eee;
+
+}
+
+.accountToggle {
+    font-size: 14px;
+    display: block;
+    color: #333;
+    cursor: pointer;
+}
+
+.accountToggle:hover {
+    color: #E0B327;
+    font-weight: 700;
+}
+.separate{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.separate .border{
+    border: solid 1px #ddd;
+    width: 100%;
+    height: 1px;
+    
+}
+.separate p{
+    color: #3e3e3e;
+    padding: 0  20px;
+    
+    
+}
+
+.logButton {
+    transition: 0.5s;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 40px;
+    font-weight: 100;
+    background: #333;
+    border-radius: 8px;
+    border: 0px;
+    color: white;
+    /* border-radius: 8px; */
+}
+
+.logButton:hover {
+    background: #E0B327;
+    color: #333;
+    font-weight: 700;
+    cursor:pointer;
+}
+.logButton:focus {
+    outline: none;
+    
+}
+p.remindText{
+    color: #aaa;
+    margin-top: 40px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+.remindText a{
+    color:#333;
+}
+#signUp {
+  display: none;
+}
+
+@media (max-width: 480px) {
+    .form {
+        padding: 40px;
+    }
+    .input{
+        font-size: 12px;
+    }
+}

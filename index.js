@@ -1,6 +1,41 @@
 window.addEventListener("load",function(){
+    //  login&signup Page=======================
+     function loginPage(){
+        // 預設隱藏，點擊按鈕打開
+        $(".logIn").click(function(){
+            $(".form_background").css("display","block");
+            // $("#login").slideDown();
+            // $("#signUp").slideUp();
+            $("#login").show();
+            $("#signUp").hide();
+            
+        })
+        $(".signUp").click(function(){
+            $(".form_background").css("display","block");
+            //滑動到#signUp
+            $("#login").hide();
+            $("#signUp").show();
 
-     // RWD 1080
+        })
+
+        //點擊其他區域可以再度隱藏
+        $(".form_background").click(function(e){
+            if(!e.target.closest(".form")){
+                $(".form_background").css("display","none");
+            }
+        }) 
+     }
+    loginPage();
+
+    //切換login & signUp????????????????????????
+    $(".accountToggle").on("click", function() {
+            
+        $("#login").toggle();
+        $("#signUp").toggle();
+
+    }); 
+      
+     // RWD 1080======================================
     let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
         if (viewportWidth <= 1080 ) {

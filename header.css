@@ -123,7 +123,6 @@ ul.catalog{
 
   /* JS設滑到才左至右移動至 0vw */
         left: -348px;
-        
     }
     ul.catalog.show{
         left: 0vw;
@@ -167,10 +166,23 @@ ul.catalog{
     
 }
 
-@media (max-width=768px) {
-    
+@media (max-width:768px) {
+    .banner_left p{
+        display: none;
+    }
+    ul.catalog{
+
+        width: 50vw;
+        z-index: 30;
+
+  /* JS設滑到才左至右移動至 0vw */
+        left: -80vw;
+    }
 }
 
-@media (max-width=414px) {
-    
+@media (max-width:468px) {
+    ul.catalog{
+        width: 100vw;
+        left: -100vw;
+    }
 }

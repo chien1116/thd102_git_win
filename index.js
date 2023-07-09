@@ -1,39 +1,55 @@
 window.addEventListener("load",function(){
     //  login&signup Page=======================
-     function loginPage(){
-        // 預設隱藏，點擊按鈕打開
-        $(".logIn").click(function(){
-            $(".form_background").css("display","block");
-            // $("#login").slideDown();
-            // $("#signUp").slideUp();
-            $("#login").show();
-            $("#signUp").hide();
-            
-        })
-        $(".signUp").click(function(){
-            $(".form_background").css("display","block");
-            //滑動到#signUp
-            $("#login").hide();
-            $("#signUp").show();
+    // form_background出現,#logInPage優先
+    function logInPage_show(){
+        $(".form_background").css("display","flex");          
+        $('#logInPage').show();
+        $('#signUpPage').hide();
+    }
+    // form_background出現,#SignUpPage優先
+    function SignUpPage_show(){
+        $(".form_background").css("display","flex");
+        $('#logInPage').hide();
+        $('#signUpPage').show();
+    }
 
-        })
-
-        //點擊其他區域可以再度隱藏
+    //點擊其他區域可以再度隱藏
+    function logIn_background_hide (){
         $(".form_background").click(function(e){
             if(!e.target.closest(".form")){
                 $(".form_background").css("display","none");
             }
-        }) 
-     }
-    loginPage();
+        });
+    }
+    //切換login & signUp
+    function login_toggle(){
+        $("#logInPage .accountToggle").click(function(){
+            $("#logInPage").slideToggle(500,function(){
+                $("#signUpPage").slideToggle(500);
+            });
+        });
 
-    //切換login & signUp????????????????????????
-    $(".accountToggle").on("click", function() {
-            
-        $("#login").toggle();
-        $("#signUp").toggle();
+        $("#signUpPage .accountToggle").click(function(){
+            $("#signUpPage").slideToggle(500,function(){
+                $("#logInPage").slideToggle(500);
+            });
+        }) ;  
+    }
 
-    }); 
+    //btn事件觸發執行功能
+    $(".logIn").click(function(){
+        logInPage_show();
+        logIn_background_hide ();
+        login_toggle()
+    });
+    
+    $(".signUp").click(function(){
+        SignUpPage_show();
+        logIn_background_hide ();
+        login_toggle()
+    });
+
+     
       
      // RWD 1080======================================
     let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
@@ -131,7 +147,7 @@ window.addEventListener("load",function(){
         }
 
 
-})
+});
 
 
 

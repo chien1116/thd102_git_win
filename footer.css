@@ -3,7 +3,7 @@
     width:100%;
     /* max-width: 1400px; */
     margin-top: 40px;
-    padding: 80px;
+    padding: 5.5vw 10vw;
     box-shadow: 0 -10px 40px rgb(238, 238, 238, .2) ;
 }
 .footer > img{
@@ -154,7 +154,19 @@ ul.sourseLink a:hover{
 
 
 @media (max-width: 768px) {
+  .business_hours{
+    display: none;
     
+  }
+  ul.sourseLink h4{
+    font-size: 20px;
+  }
+  .remind{
+    font-size: 12px;
+  }
+  .remindInfo p{
+    display: none;
+  }
 }
 
 @media (max-width: 414px) {

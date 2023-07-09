@@ -7,7 +7,7 @@ font-family: 'Noto Sans Symbols', sans-serif; */
 @import url(./logIn&signUp.css);
 
 *,*::before,*::after{
-    /* outline: solid 1px red; */
+    outline: solid 1px red;
     box-sizing: border-box;
 }
 
@@ -93,28 +93,34 @@ a{
 
 .infoBlock{
     display: flex;
-    max-width:1400px;
-    margin: 5.5% 10%;
-    /* padding: 5.5% 10%; */
+    padding: 5.5% 10%;
     justify-content: space-between;
     align-items: end;
     flex-wrap: wrap;
 }
 .infoBlock .image{
     flex:1;
+    margin-right: 5.5vw;
     font-size: 0;
-    min-width: 268px;
     overflow: hidden;
+    width:288px ;
+    max-width: 100%;
+    height: 320px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .infoBlock img{
-    width:100%;
+    height: 100%;
 }
 .infoBlock .text{
     flex:1;
+    /* min-width: 320px; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 10px;
+   
 }
 
 .infoBlock h1{
@@ -133,7 +139,7 @@ a{
 .main_section1{
     min-width:332px; 
     width:100%;
-    padding: 5.5% 10%;
+    padding: 0 10% 5.5%;
     display: flex;
     justify-content: space-between;
 
@@ -388,7 +394,21 @@ li.card{
 }
 
 @media (max-width: 768px) {
+    /* index */
     
+    
+    .infoBlock{
+        flex-direction: column;
+    }
+    .infoBlock .image{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    
+    }
+    .infoBlock img{
+        width: 100%;
+    }
 }
 
 @media (max-width: 414px) {

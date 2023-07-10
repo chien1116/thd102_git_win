@@ -6,7 +6,7 @@ font-family: 'Noto Sans Symbols', sans-serif; */
 *,*::before,*::after{
     /* outline: solid 1px red; */
     box-sizing: border-box;
-    position: relative;
+    /* position: relative; */
 }
 /* -------------------------------- */
 html,body{
@@ -126,6 +126,15 @@ ul.catalog{
 .btn.signUp{
     background-color: #E0B327;
 }
+
+
+
+
+
+
+
+
+
 /* masterVision */
 .masterVision{
     max-width: 1400px;
@@ -136,6 +145,7 @@ ul.catalog{
     
     background-size:  cover ;
     padding:150px 0px 80px 80px ;
+    
 }
 .header_info{
     display: flex;
@@ -175,12 +185,14 @@ ul.catalog{
 .enterprises {
     display: flex;
     margin-bottom: 40PX;
+    position: relative;
      
   }
 .companies {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
  }
 .enterprises img {
     margin: 10px;
@@ -213,6 +225,7 @@ ul.catalog{
     align-items: center;
     margin-right: 8px;
     justify-content: space-between;
+    position: relative;
 }
 .card img{
     height: 80px;
@@ -361,6 +374,15 @@ iframe {
 .smallText .title_sm{
     display: flex;
 }
+
+
+
+
+
+
+
+
+
 
 /* footer */
 .footer{

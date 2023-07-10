@@ -40,17 +40,16 @@ window.addEventListener("load",function(){
     $(".logIn").click(function(){
         logInPage_show();
         logIn_background_hide ();
-        login_toggle()
+        login_toggle();
     });
     
     $(".signUp").click(function(){
         SignUpPage_show();
         logIn_background_hide ();
-        login_toggle()
+        login_toggle();
     });
 
     // ************ cards  using: owl-carousel ********** 
-    //當滾動到才觸發????????????????????????????
     function cards_carousel(){
         "use strict";
         var owl = $('.owl-carousel');
@@ -80,17 +79,40 @@ window.addEventListener("load",function(){
         });
 
           
-    }
-    cards_carousel()
+    };
+    cards_carousel();
+
+    //卡片導向其他分頁
+    function cards_link(){
+        $(".card").click(function(e){
+            //不同卡片導向其他分頁
+            let nowCard = e.target.closest(".card");
+            
+            if(nowCard.classList.contains("card1")){
+                window.location.href = "./page_About/about.html";
+            }else if(nowCard.classList.contains("card2")){
+                window.location.href = "./page_Blog/blog.html";
+            }else if(nowCard.classList.contains("card3")){
+                window.location.href = "./page_FAQ/FAQ.html";
+            }else if(nowCard.classList.contains("card4")){
+                window.location.href = "./page_Join/join.html";
+            }else if(nowCard.classList.contains("card5")){
+                window.location.href = "./page_Place/place.html";
+            }else if(nowCard.classList.contains("card6")){
+                window.location.href = "./page_reservation/reservation.html";
+            }
+        })
+    };
+    cards_link();
       
      // RWD 1080======================================
     let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
-        if (viewportWidth <= 1080 ) {
+        if (viewportWidth <= 1200 ) {
             //header bar 目錄 click觸發============================
             function show_catalog(e){
                 let catalog_el=document.querySelector(".catalog");
-                catalog_el.classList.toggle("show")
+                catalog_el.classList.toggle("show");
             }
 
             document.addEventListener("click",function(e){
@@ -104,6 +126,7 @@ window.addEventListener("load",function(){
           //footer 目錄===============================
             //moseover 
             document.addEventListener("mouseover",function(e){
+            
                 let title_sm_els=document.querySelector(".sourseInfo").querySelectorAll(".title_sm");
 
                 title_sm_els.forEach(function(title_sm_el){
@@ -147,6 +170,7 @@ window.addEventListener("load",function(){
                 })
                 
             })
+
 
             // footer 滑鼠離開事件
             function footer_list_hide(){

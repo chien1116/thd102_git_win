@@ -1,83 +1,26 @@
-/* =========== 共用屬性 ============= */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@300;400;600;800&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Sans:wght@400;600;800;900&display=swap');
-/* font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
-font-family: 'Noto Sans Symbols', sans-serif; */
-@import url(./header.css);
-@import url(./footer.css);
-@import url(./logIn&signUp.css);
-
-*,*::before,*::after{
-    /* outline: solid 1px red; */
-    box-sizing: border-box;
-}
-
-/* -------------------------------- */
-html,body{
-    max-width: 1920px;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    color: #f5f5f5;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a{
-    text-decoration: none;
-    font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
-}
-
-.bigText{
-    font-size:60px;
-    font-weight: 800;
-    font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
-}
-.title_sm{
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
-}
-.title_md{
-    font-size: 44px;
-    line-height: 1.2;
-    font-weight: 700;
-    font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
-}
-
-
-
-
 /* =========== index 首頁 ============= */
-.index{
-    width:100%;
-    margin: 0 auto;
-    font-size: 16px;
-    line-height:1.5;
-    overflow: hidden;
-}
+// .pageContainer{
+//     width:100%;
+//     margin: 0 auto;
+//     font-size: 16px;
+//     line-height:1.5;
+//     overflow: hidden;
+// }
 
-.header{
-    /* max-width: 1400px; */
-    width:100%;
-    display: flex;
-    flex-direction: column;
-}
 
-/* masterVision */
-.masterVision{
-    margin-top:50px ;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-image: url(./img/header_bg.jpg);
-    background-position: right 0 0;
-    background-size:  cover ;
-    background-repeat: no-repeat;
-    padding:10%;
-    padding-bottom: 5.5%;
-}
+// /* masterVision */
+// .masterVision{
+//     margin-top:50px ;
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     background-image: url(../img/header_bg.jpg);
+//     background-position: right 0 0;
+//     background-size:  cover ;
+//     background-repeat: no-repeat;
+//     padding:10%;
+//     padding-bottom: 5.5%;
+// }
 
 .visit{
     margin-top: 20px;
@@ -160,13 +103,7 @@ a{
     padding-left: 5.5%;
 }
 
-.btns{
-    display: flex;
-    cursor: pointer;
-    white-space: nowrap; /*文字不換行*/
-    flex-wrap: wrap;
-    padding-left: 5.5%;
-}
+
 .btn.more{
     margin-right: 20px;
     min-width: 136px;
@@ -179,17 +116,12 @@ a{
 
 }
 
-.btns a{
-    display: block;
-    text-align: center;
-}
-
 /* main_section2 */
 /* WHAT WE SUPPLY */
 .main_section2{
     width:100%;
     /* max-width: 1400px; */
-    background-image: url("./img/body_pic2_bg.png");
+    background-image: url("../img/body_pic2_bg.png");
     padding: 5.5% 10%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,12 +133,14 @@ a{
 .main_section2 p{
     margin-top: 40px;
 }
+
 .success{
     display: flex;
     text-align: center;
     margin-top: 40px;  
     flex-wrap: wrap; 
 }
+
 .success > div{
     margin-right: 10%;    
 }
@@ -223,8 +157,8 @@ a{
     /* max-width: 1400px; */
     background-color: #fff;
     color: black;
-    border-radius: 60px;
-    padding: 5.5% 10%;
+    border-radius: 40px;
+    padding: 10%;
     justify-content: space-between;
 }
 .main_section3 .title_md{
@@ -250,7 +184,7 @@ a{
 .infoList{
     display: flex;
     justify-content: space-between;
-    padding: 10px 10%;
+    padding: 10px 5.5%;
     border-top: solid 1px black;
     border-bottom: solid 1px black; 
     margin: 20px 0;
@@ -261,6 +195,9 @@ a{
 }
 ul.detail{
     padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 .btn.booking{
     text-decoration: none;
@@ -276,7 +213,7 @@ ul.detail{
     flex-grow: 1;
     font-size: 0;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 8px;
     max-height: 446px;
     
 }
@@ -290,10 +227,10 @@ ul.detail{
     padding: 5.5% 10%;
 }
 ul.cards{
-    
     display: flex;
     justify-content: space-between;
     position: relative;
+    
 
 }
 
@@ -304,7 +241,7 @@ ul.cards::before{
 
     height: 100%;
     
-    background: linear-gradient(90deg, rgba(3,3,3,1) 0%, rgba(3,3,3,0.5) 10%, rgba(3,3,3,0) 20%, rgba(3,3,3,0) 80%, rgba(3,3,3,0.5) 90%, rgba(3,3,3,1) 100%);
+    background: linear-gradient(90deg, rgba(3,3,3,1) 0%, rgba(3,3,3,0.5) 5%, rgba(3,3,3,0) 15%, rgba(3,3,3,0) 85%, rgba(3,3,3,0.5) 95%, rgba(3,3,3,1) 100%);
     position: absolute;
     z-index: 10;
     pointer-events: none;
@@ -326,11 +263,26 @@ ul.cards::before{
 }
 li.card{
     max-width: 100%;
-    /* margin-right: 40px; */
+    height: 100%;
     background-color: #fff;
     color: #333;
     border-radius: 16px;
-    border: solid 2px #eee;
+    border: solid 1.25px #eee;
+    overflow: hidden;
+    opacity: .5;
+    transform: translate3d(0px, 0%, 0px) scale3d(0.9, 0.9, 0.9);
+    transition:0.5s;
+
+    cursor: pointer;
+    
+    
+}
+/* -OwlCarousel輪播設定  中間者畫面*/
+.owl-carousel .owl-item.active.center li.card {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+    opacity:1;
+    
+    z-index: 30;
 }
 
 .service_info{
@@ -339,13 +291,13 @@ li.card{
 .service_info h4{
     padding: 20px 40px;
     margin: 0;
-    border-top: solid 2px #eee;
-    border-bottom: solid 2px #eee;
+    border-top: solid 1px #eee;
+    border-bottom: solid 1px #eee;
     
 }
 .service_info p{
     padding: 10px 40px;
-    border-top: solid 2px #eee;
+    border-top: solid 1px #eee;
     color: #747474;
 }
 .link{
@@ -378,28 +330,21 @@ li.card{
     margin-right:12px;
 }
 
+/* =========== about page ============= */
 
 
 
 
-/* JS用 */
-.show{
-    display: block;
-}
-.hide{
-    display: none;
-}
 
-
-/* ========= 斷點 ======== */
+/* ========= ========= 斷點 ====== =========== */
 @media (max-width: 1080px) {
+    /* index */
+    /* about */
     
 }
 
 @media (max-width: 768px) {
     /* index */
-    
-    
     .infoBlock{
         flex-direction: column;
     }
@@ -409,15 +354,20 @@ li.card{
         margin-bottom: 20px;
     
     }
+    .content .left{
+        padding: 0 0 20px;
+    }
+
     .infoBlock img{
         width: 100%;
     }
+    /* about */
 }
 
 @media (max-width: 468px) {
+    /* index */
     ul.cards::before{
-       
        display: none;
-
     }
+    /* about */
 }

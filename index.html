@@ -5,16 +5,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- titleIcon -->
     <link href="img/favicon.ico" rel="shortcut icon"/>
     <title>[Here]:Home</title>
+
     <!--OwlCarousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--OwlCarousel輪播套件 -->
+    <link rel="stylesheet" href="http://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css">
+
     <!-- font-awasome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./SCSS/index_all.css">
  
 </head>
 
@@ -104,440 +108,443 @@
     </div>
     <!-- ================================================== -->
     <!-- index -->
-    <div class='index'>
+    <div class='pageContainer index'>
         
-    <!-- header -->
-    <div class="header">
-       
-        <!-- nav -->
-        <div class="banner">
-
-            <div class="banner_left">
-
-                <i class="fa-solid fa-bars show"></i>
-
-                <img src="./img/header_logo.svg" alt="logo">
-                <p>find your lancerScape anyHERE.</p>
-            </div>
-
-            <div class="banner_right">
-                <ul class="catalog">
-                    <li> 
-                        <a href="index.html" class="pagename nowPage" id="home">Home</a>
-                    </li>
-                    <li>
-                        <a href="./page_Place/place.html" class="pagename" id="Place">Place</a>
-                    </li>
-                    <li>
-                        <a href="./page_About/about.html" class="pagename" id="About">About</a>
-                    </li>
-                    <li>
-                        <a href="./page_Blog/blog.html" class="pagename" id="Blog">Blog</a>
-                    </li>
-                    <li>
-                        <a href="./page_Join/join.html" class="pagename" id="Join Us">Join Us</a>
-                    </li> 
-                </ul>
-                
-                <a href="#" class="btn logIn">LOG IN</a>
-                <a href="#" class="btn signUp">SIGN UP</a>
-                
-            </div>
-            
-        </div>  
-        <!-- mv -->
-        <div class="masterVision">
-            <div class="header_logo_bg">
-                <img src="./img/header_logo_bg.svg" alt="logo">
-            </div>
-            <a href="#visit" class="btn visit">Visit</a>
-        </div> 
+        <!-- header -->
+        <div class="header">
         
-    </div> 
-    <!-- main -->
-    <main>
-        
-        <div class="infoBlock">
-            <div class="image">
-                <img src="./img/body_pic1.png" alt="">
-            </div>
-            
-            <div class="text">
-                <h1>Work from
-                    <span class="bigText">anywhere</span>
-                    you want
-                </h1>
-                <p>On the floors of most buildings in popular areas,there are plenty of usable spaces hiding in plain sight. The cooant.
-                    On the floors of most buildings in popular areas,there are plenty of usable spaces hiding in plain sight. The cooant.
-                </p>
-            </div>
-        </div> 
-        
-        <!-- how we work -->
-        <section id="visit">
-            <div class="main_section1">
-                <div class="left">
-                    <h4 class="title_sm">
-                        HOW WE WORK
-                    </h4>
-                    <h2 class="title_md">
-                        This is how <br>good workers <br>find great space.
-                    </h2>
-                </div>
-                <div class="right">
-                    <p>orem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam haeos cupiditate dolore doloribus!</p>
-                    <div class="btns">
-                        <a href='./page_About/about.html' class="btn more">More Info</button></a>
-                        <a href='#' class="btn signup">Sign Up For Free</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <!-- nav -->
+            <div class="banner">
 
-        <!-- WHAT WE SUPPLY -->
-        <section>
-            <div class="main_section2">
-                <div class="infoText">
-                    <h4 class="title_sm">
-                        WHAT WE SUPPLY
-                    </h4>
-                    <h2 class="title_md">
-                        Find Your Lancerscape<br>
-                        from here.
-                    </h2>
-                    <p>
-                        orem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus lias officiis as eos cupiditate dolore doloribus!
-                    </p>
-                </div>
-                <div class="success">
-                    <div>
-                        <h1 class="bigText">500+</h1>
-                        <h4 class="title_sm">
-                            Users Support
-                        </h4>
-                    </div>
-                    <div>
-                        <h1 class="bigText">1500+</h1>
-                        <h4 class="title_sm">
-                            Place  Provide
-                        </h4>
-                    </div>
-                    <div>
-                        <h1 class="bigText">1500+</h1>
-                        <h4 class="title_sm">
-                            Experience Share
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </section>  
-            
-        <!--ad  -->
-        <article>
-            <div class="main_section3">
-                <h2 class="title_md">
-                    You Don’t Have to Work at Home or The Office.
-                </h2>
-                <div class="content">
-                    <div class="left">
-                        <p>Work From Here selects the best of these spaces and transforms them into pop-up Work From Here selects the best of these spaces and transforms them into pop-up Work From Here selects the best of these spaces and transforms them into pop-up.</p>
+                <div class="banner_left">
 
-                        <div class="infoList">
-                            <ul class="items">
-                                <li>LOCATTION</li>
-                                <li>PRICE</li>
-                                <li>CONTACT</li>
-                                <li>ROOMS</li>
-                                <li>CAPACITY</li>
-                            </ul>
-                            <ul class="detail">
-                                <li>London,UK</li>
-                                <li>4000 € / day</li>
-                                <li>+44 20 79813000</li>
-                                <li>3</li>
-                                <li>25</li>
-                            </ul>
-                        </div>
+                    <i class="fa-solid fa-bars show"></i>
 
-                        <a href="./page_reservation/reservation.html" class="btn booking">Booking</a>
-                    </div>
-                    <div class="image">
-                        <img src="./img/body_pic3.png" alt="">
-                    </div>
+                    <img src="./img/header_logo.svg" alt="logo">
+                    <p>find your lancerScape anyHERE.</p>
+                </div>
+
+                <div class="banner_right">
+                    <ul class="catalog">
+                        <li> 
+                            <a href="index.html" class="pagename nowPage" id="home">Home</a>
+                        </li>
+                        <li>
+                            <a href="./page_Place/place.html" class="pagename" id="Place">Place</a>
+                        </li>
+                        <li>
+                            <a href="./page_About/about.html" class="pagename" id="About">About</a>
+                        </li>
+                        <li>
+                            <a href="./page_Blog/blog.html" class="pagename" id="Blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="./page_Join/join.html" class="pagename" id="Join Us">Join Us</a>
+                        </li> 
+                    </ul>
+                    
+                    <a href="#" class="btn logIn">LOG IN</a>
+                    <a href="#" class="btn signUp">SIGN UP</a>
                     
                 </div>
                 
-            </div>
-        </article>
+            </div>  
+            <!-- mv -->
+            <div class="masterVision">
+                <div class="header_logo_bg">
+                    <img src="./img/header_logo_bg.svg" alt="logo">
+                </div>
+                <a href="#visit" class="btn visit">Visit</a>
+            </div> 
+            
+        </div> 
+        <!-- main -->
+        <main>
+            
+            <div class="infoBlock">
+                <div class="image">
+                    <img src="./img/body_pic1.png" alt="">
+                </div>
+                
+                <div class="text">
+                    <h1>Work from
+                        <span class="bigText">anywhere</span>
+                        you want
+                    </h1>
+                    <p>On the floors of most buildings in popular areas,there are plenty of usable spaces hiding in plain sight. The cooant.
+                        On the floors of most buildings in popular areas,there are plenty of usable spaces hiding in plain sight. The cooant.
+                    </p>
+                </div>
+            </div> 
+            
+            <!-- how we work -->
+            <section id="visit">
+                <div class="main_section1">
+                    <div class="left">
+                        <h4 class="title_sm">
+                            HOW WE WORK
+                        </h4>
+                        <h2 class="title_md">
+                            This is how <br>good workers <br>find great space.
+                        </h2>
+                    </div>
+                    <div class="right">
+                        <p>orem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam haeos cupiditate dolore doloribus!</p>
+                        <div class="btns">
+                            <a href='./page_About/about.html' class="btn more">More Info</button></a>
+                            <a href='#' class="btn signup">Sign Up For Free</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <!--************ cards  using: owl-carousel **********-->
-        <article>
-            <div class="service">
-                <h4 class="title_sm">
-                    PROVIDE SERVICES
-                </h4>
-                <div class="subTitle">
-                    <img src="./img/card_logo_md.svg" alt="logo">
-                     <h2 class="title_md">
-                        is ready to provide you...
+            <!-- WHAT WE SUPPLY -->
+            <section>
+                <div class="main_section2">
+                    <div class="infoText">
+                        <h4 class="title_sm">
+                            WHAT WE SUPPLY
+                        </h4>
+                        <h2 class="title_md">
+                            Find Your Lancerscape<br>
+                            from here.
+                        </h2>
+                        <p>
+                            orem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus lias officiis as eos cupiditate dolore doloribus!
+                        </p>
+                    </div>
+                    <div class="success">
+                        <div>
+                            <h1 class="bigText">500+</h1>
+                            <h4 class="title_sm">
+                                Users Support
+                            </h4>
+                        </div>
+                        <div>
+                            <h1 class="bigText">1500+</h1>
+                            <h4 class="title_sm">
+                                Place  Provide
+                            </h4>
+                        </div>
+                        <div>
+                            <h1 class="bigText">1500+</h1>
+                            <h4 class="title_sm">
+                                Experience Share
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+                
+            <!--ad  -->
+            <article>
+                <div class="main_section3">
+                    <h2 class="title_md">
+                        You Don’t Have to Work at Home or The Office.
                     </h2>
-                </div>
-                
-                <ul class="cards owl-carousel">
+                    <div class="content">
+                        <div class="left">
+                            <p>Work From Here selects the best of these spaces and transforms them into pop-up Work From Here selects the best of these spaces and transforms them into pop-up Work From Here selects the best of these spaces and transforms them into pop-up.</p>
 
-                    <li class="card card1">
-                        <div class="card_img">
-                            <img src="./img/card_pic1.png" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h4 class="title_sm">
-                                PROVIDE SERVICES
-                            </h4>
-                            <p>
-                                "Neque porro quisq uam est qui dolorem ipsum quia dolor sit amt...am est qui dolorem ipsum q......"
-                            </p>
-                            <div class="link">
-                                <div class="tag">
-                                    #tagName
-                                </div>
-                                <div class='likeAndShare'>
-                                    <a href="#"><img src="./img/icon_heart.svg">Like</a>
-                                    <a href="#"><img src="./img/icon_share.svg">Share</a>
-                                </div>
+                            <div class="infoList">
+                                <ul class="items">
+                                    <li>LOCATTION</li>
+                                    <li>PRICE</li>
+                                    <li>CONTACT</li>
+                                    <li>ROOMS</li>
+                                    <li>CAPACITY</li>
+                                </ul>
+                                <ul class="detail">
+                                    <li>London,UK</li>
+                                    <li>4000 € / day</li>
+                                    <li>+44 20 79813000</li>
+                                    <li>3</li>
+                                    <li>25</li>
+                                </ul>
                             </div>
-                        </div>
-                    </li>
 
-                    <li class="card card2">
-                        <div class="card_img">
-                            <img src="./img/card_pic2.png" alt="">
+                            <a href="./page_reservation/reservation.html" class="btn booking">Booking</a>
                         </div>
-                        <div class="service_info">
-                            <h4 class="title_sm">
-                                PROVIDE SERVICES
-                            </h4>
-                            <p>
-                                "Neque porro quisq uam est qui dolorem ipsum quia dolor sit amt...am est qui dolorem ipsum q......"
-                            </p>
-                            <div class="link">
-                                <div class="tag">
-                                    #tagName
-                                </div>
-                                <div class='likeAndShare'>
-                                    <a href="#"><img src="./img/icon_heart.svg">Like</a>
-                                    <a href="#"><img src="./img/icon_share.svg">Share</a>
-                                </div>
-                            </div>
+                        <div class="image">
+                            <img src="./img/body_pic3.png" alt="">
                         </div>
-                    </li>
-
-                    <li class="card card3">
-                        <div class="card_img">
-                            <img src="./img/card_pic3.png" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h4 class="title_sm">
-                                PROVIDE SERVICES
-                            </h4>
-                            <p>
-                                "Neque porro quisq uam est qui dolorem ipsum quia dolor sit amt...am est qui dolorem ipsum q......"
-                            </p>
-                            <div class="link">
-                                <div class="tag">
-                                    #tagName
-                                </div>
-                                <div class='likeAndShare'>
-                                    <a href="#"><img src="./img/icon_heart.svg">Like</a>
-                                    <a href="#"><img src="./img/icon_share.svg">Share</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="card card4">
-                        <div class="card_img">
-                            <img src="./img/card_pic4.png" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h4 class="title_sm">
-                                PROVIDE SERVICES
-                            </h4>
-                            <p>
-                                "Neque porro quisq uam est qui dolorem ipsum quia dolor sit amt...am est qui dolorem ipsum q......"
-                            </p>
-                            <div class="link">
-                                <div class="tag">
-                                    #tagName
-                                </div>
-                                <div class='likeAndShare'>
-                                    <a href="#"><img src="./img/icon_heart.svg">Like</a>
-                                    <a href="#"><img src="./img/icon_share.svg">Share</a>
-                                </div>
-                            </div>
-                        </div>                        
-                    </li>
-
-                    <li class="card card5">
-                        <div class="card_img">
-                            <img src="./img/card_pic5.png" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h4 class="title_sm">
-                                PROVIDE SERVICES
-                            </h4>
-                            <p>
-                                "Neque porro quisq uam est qui dolorem ipsum quia dolor sit amt...am est qui dolorem ipsum q......"
-                            </p>
-                            <div class="link">
-                                <div class="tag">
-                                    #tagName
-                                </div>
-                                <div class='likeAndShare'>
-                                    <a href="#"><img src="./img/icon_heart.svg">Like</a>
-                                    <a href="#"><img src="./img/icon_share.svg">Share</a>
-                                </div>
-                            </div>
-                        </div>                        
-                    </li>
-
-                    <li class="card card6">
-                        <div class="card_img">
-                            <img src="./img/card_pic6.png" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h4 class="title_sm">
-                                PROVIDE SERVICES
-                            </h4>
-                            <p>
-                                "Neque porro quisq uam est qui dolorem ipsum quia dolor sit amt...am est qui dolorem ipsum q......"
-                            </p>
-                            <div class="link">
-                                <div class="tag">
-                                    #tagName
-                                </div>
-                                <div class='likeAndShare'>
-                                    <a href="#"><img src="./img/icon_heart.svg">Like</a>
-                                    <a href="#"><img src="./img/icon_share.svg">Share</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </article>
-
-    </main>
-
-    <!-- footer -->
-    <footer>
-        <div class="footer">
-            <img src="./img/header_logo.svg" alt="">
-            <div class="sourseInfo">
-                <ul class="sourseLink office">
-                    <h4 class="title_sm">OFFICE</h4>
-                    <div class="link_list">
-                        <li>
-                            <a href="#">Taipei, Taiwan</a>
-                        </li>
-                        <li>
-                            <a href="#">Tokyo, Japan</a>
-                        </li>
-                        <li>
-                            <a href="#">London, Uk</a>
-                        </li>
-                        <li>
-                            <a href="#">SEA, USA</a>
-                        </li>  
-                    </div>
                         
-                </ul>
-                
-                <ul class="sourseLink Comminicate">
-                    <h4 class="title_sm">Comminicate</h4>
-                    <div class="link_list">
-                        <li>
-                            <a href="#">Interview</a>
-                        </li>
-                        <li>
-                            <a href="#">Activity</a>
-                        </li> 
                     </div>
-                </ul>
+                    
+                </div>
+            </article>
 
-                <ul class="sourseLink ProductAndPrice">
-                    <h4 class="title_sm">Product / Price</h4>
-                    <div class="link_list">
-                        <li>
-                            <a href="#">Office Space</a>
-                        </li>
-                        <li>
-                            <a href="#">Co-working Space</a>
-                        </li>
-                        <li>
-                            <a href="#">Activity Space</a>
-                        </li>
-                        <li>
-                            <a href="#">Meeting Room</a>
-                        </li>      
+            <!--************ cards  using: owl-carousel **********-->
+            <article>
+                <div class="service">
+                    <h4 class="title_sm">
+                        PROVIDE SERVICES
+                    </h4>
+                    <div class="subTitle">
+                        <img src="./img/card_logo_md.svg" alt="logo">
+                        <h2 class="title_md">
+                            is ready to provide you...
+                        </h2>
                     </div>
-                </ul>
+                    
+                    <ul class="cards owl-carousel">
+                        
+                        <li class="card card1">
+                            <div class="card_img">
+                                <img src="./img/card_pic1.png" alt="">
+                            </div>
+                            <div class="service_info">
+                                <h4 class="title_sm">
+                                    PROVIDE SERVICES
+                                </h4>
+                                <p>
+                                    "Neque porro quisq uam est qui dolorem ipsum quia dolor sit amt...am est qui dolorem ipsum q......"
+                                </p>
+                                <div class="link">
+                                    <div class="tag">
+                                        #tagName
+                                    </div>
+                                    <div class='likeAndShare'>
+                                        <a href="#"><img src="./img/icon_heart.svg">Like</a>
+                                        <a href="#"><img src="./img/icon_share.svg">Share</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
 
-                <ul class="sourseLink Company">
-                    <h4 class="title_sm">Company</h4>
-                    <div class="link_list">
-                        <li>
-                            <a href="#">Contact</a>
+                        
+
+                        <li class="card card2">
+                            <div class="card_img">
+                                <img src="./img/card_pic2.png" alt="">
+                            </div>
+                            <div class="service_info">
+                                <h4 class="title_sm">
+                                    PROVIDE SERVICES
+                                </h4>
+                                <p>
+                                    "Neque porro quisq uam est qui dolorem ipsum quia dolor sit amt...am est qui dolorem ipsum q......"
+                                </p>
+                                <div class="link">
+                                    <div class="tag">
+                                        #tagName
+                                    </div>
+                                    <div class='likeAndShare'>
+                                        <a href="#"><img src="./img/icon_heart.svg">Like</a>
+                                        <a href="#"><img src="./img/icon_share.svg">Share</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li>
-                            <a href="#">About us</a>
+
+                        <li class="card card3">
+                            <div class="card_img">
+                                <img src="./img/card_pic3.png" alt="">
+                            </div>
+                            <div class="service_info">
+                                <h4 class="title_sm">
+                                    PROVIDE SERVICES
+                                </h4>
+                                <p>
+                                    "Neque porro quisq uam est qui dolorem ipsum quia dolor sit amt...am est qui dolorem ipsum q......"
+                                </p>
+                                <div class="link">
+                                    <div class="tag">
+                                        #tagName
+                                    </div>
+                                    <div class='likeAndShare'>
+                                        <a href="#"><img src="./img/icon_heart.svg">Like</a>
+                                        <a href="#"><img src="./img/icon_share.svg">Share</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li>
-                            <a href="#">Leadership</a>
+
+                        <li class="card card4">
+                            <div class="card_img">
+                                <img src="./img/card_pic4.png" alt="">
+                            </div>
+                            <div class="service_info">
+                                <h4 class="title_sm">
+                                    PROVIDE SERVICES
+                                </h4>
+                                <p>
+                                    "Neque porro quisq uam est qui dolorem ipsum quia dolor sit amt...am est qui dolorem ipsum q......"
+                                </p>
+                                <div class="link">
+                                    <div class="tag">
+                                        #tagName
+                                    </div>
+                                    <div class='likeAndShare'>
+                                        <a href="#"><img src="./img/icon_heart.svg">Like</a>
+                                        <a href="#"><img src="./img/icon_share.svg">Share</a>
+                                    </div>
+                                </div>
+                            </div>                        
                         </li>
-                        <li>
-                            <a href="#">Responsibility</a>
-                        </li>      
+
+                        <li class="card card5">
+                            <div class="card_img">
+                                <img src="./img/card_pic5.png" alt="">
+                            </div>
+                            <div class="service_info">
+                                <h4 class="title_sm">
+                                    PROVIDE SERVICES
+                                </h4>
+                                <p>
+                                    "Neque porro quisq uam est qui dolorem ipsum quia dolor sit amt...am est qui dolorem ipsum q......"
+                                </p>
+                                <div class="link">
+                                    <div class="tag">
+                                        #tagName
+                                    </div>
+                                    <div class='likeAndShare'>
+                                        <a href="#"><img src="./img/icon_heart.svg">Like</a>
+                                        <a href="#"><img src="./img/icon_share.svg">Share</a>
+                                    </div>
+                                </div>
+                            </div>                        
+                        </li>
+
+                        <li class="card card6">
+                            <div class="card_img">
+                                <img src="./img/card_pic6.png" alt="">
+                            </div>
+                            <div class="service_info">
+                                <h4 class="title_sm">
+                                    PROVIDE SERVICES
+                                </h4>
+                                <p>
+                                    "Neque porro quisq uam est qui dolorem ipsum quia dolor sit amt...am est qui dolorem ipsum q......"
+                                </p>
+                                <div class="link">
+                                    <div class="tag">
+                                        #tagName
+                                    </div>
+                                    <div class='likeAndShare'>
+                                        <a href="#"><img src="./img/icon_heart.svg">Like</a>
+                                        <a href="#"><img src="./img/icon_share.svg">Share</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer">
+                <img src="./img/header_logo.svg" alt="">
+                <div class="sourseInfo">
+                    <ul class="sourseLink office">
+                        <h4 class="title_sm">OFFICE</h4>
+                        <div class="link_list">
+                            <li>
+                                <a href="#">Taipei, Taiwan</a>
+                            </li>
+                            <li>
+                                <a href="#">Tokyo, Japan</a>
+                            </li>
+                            <li>
+                                <a href="#">London, Uk</a>
+                            </li>
+                            <li>
+                                <a href="#">SEA, USA</a>
+                            </li>  
+                        </div>
+                            
+                    </ul>
+                    
+                    <ul class="sourseLink Comminicate">
+                        <h4 class="title_sm">Comminicate</h4>
+                        <div class="link_list">
+                            <li>
+                                <a href="#">Interview</a>
+                            </li>
+                            <li>
+                                <a href="#">Activity</a>
+                            </li> 
+                        </div>
+                    </ul>
+
+                    <ul class="sourseLink ProductAndPrice">
+                        <h4 class="title_sm">Product / Price</h4>
+                        <div class="link_list">
+                            <li>
+                                <a href="#">Office Space</a>
+                            </li>
+                            <li>
+                                <a href="#">Co-working Space</a>
+                            </li>
+                            <li>
+                                <a href="#">Activity Space</a>
+                            </li>
+                            <li>
+                                <a href="#">Meeting Room</a>
+                            </li>      
+                        </div>
+                    </ul>
+
+                    <ul class="sourseLink Company">
+                        <h4 class="title_sm">Company</h4>
+                        <div class="link_list">
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="#">Leadership</a>
+                            </li>
+                            <li>
+                                <a href="#">Responsibility</a>
+                            </li>      
+                        </div>
+                    </ul>
+
+                    <div class="business_hours">
+                        <div class="media_logo">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="./img/icon_ig.svg" alt="">
+                            </a>
+
+                            <a href="https://www.twitter.com/" target="_blank">
+                                <img src="./img/icon_twitter.svg" alt="">
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="./img/icon_fb.svg" alt="">
+                            </a>
+                        </div>
+                        <h4 class="title_sm">Business Hours</h4>
+                        <p>
+                            Monday-Friday<br>
+                            08:00 - 17:00<br>
+                            Email : 123456@wfwh.com
+                        </p>    
                     </div>
-                </ul>
+                </div>
 
-                <div class="business_hours">
-                    <div class="media_logo">
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <img src="./img/icon_ig.svg" alt="">
-                        </a>
-
-                        <a href="https://www.twitter.com/" target="_blank">
-                            <img src="./img/icon_twitter.svg" alt="">
-                        </a>
-                        <a href="https://www.facebook.com/" target="_blank">
-                            <img src="./img/icon_fb.svg" alt="">
-                        </a>
+                <div class="remind">
+                    
+                    <div class="remindInfo">
+                        <p>WFW[here]-2023</p>
+                        <a href="./page_FAQ/FAQ.html">條款與條件</a>
+                        <a href="./page_FAQ/FAQ.html">隱私政策</a>
                     </div>
-                    <h4 class="title_sm">Business Hours</h4>
-                    <p>
-                        Monday-Friday<br>
-                        08:00 - 17:00<br>
-                        Email : 123456@wfwh.com
-                    </p>    
+                    <a href="#" class="backToTop">
+                        <p>Back to top</p>
+                        <img src="./img/icon_arrowUp.svg" alt="">
+                    </a>
                 </div>
             </div>
+        </footer>
 
-            <div class="remind">
-                
-                <div class="remindInfo">
-                    <p>WFW[here]-2023</p>
-                    <a href="./page_FAQ/FAQ.html">條款與條件</a>
-                    <a href="./page_FAQ/FAQ.html">隱私政策</a>
-                </div>
-                <a href="#" class="backToTop">
-                    <p>Back to top</p>
-                    <img src="./img/icon_arrowUp.svg" alt="">
-                </a>
-            </div>
-        </div>
-    </footer>
-
-  </index>
+    </div>
 
 
 
@@ -546,7 +553,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- OwlCarousel2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./index.js"></script>
+    <script src="./all.js"></script>
 
 
 </body>

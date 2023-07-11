@@ -72,6 +72,21 @@ table {
   white-space: nowrap; /*文字不換行*/
 }
 
+.banner.white {
+  background-color: #fff;
+  color: black;
+}
+.banner.white .btn.logIn {
+  background-color: #aaa;
+  color: #eee;
+}
+.banner.white .pagename {
+  color: black;
+}
+.banner.white .nowPage:after {
+  background-color: black;
+}
+
 .banner_left {
   display: flex;
   align-items: end;
@@ -158,6 +173,9 @@ ul.catalog {
     margin-right: 4.5%;
     cursor: pointer;
     transition: 0.5s;
+  }
+  .fa-solid.fa-bars.black {
+    color: #333;
   }
   .fa-solid.fa-bars.show:hover {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);

@@ -327,10 +327,6 @@ a {
   white-space: nowrap;
 }
 
-*, *::before, *::after {
-  outline: solid 1px red;
-}
-
 /* main-vision */
 .masterVision {
   background-image: url(../page_Place/img/mv_bg_big.png);

@@ -332,8 +332,7 @@ a {
   margin-top: 20px;
   font-size: 20px;
   width: 260px;
-  text-align: center;
-  text-decoration: none;
+  justify-content: center;
   /* margin-bottom: 80px; */
 }
 

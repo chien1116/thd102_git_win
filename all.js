@@ -38,14 +38,14 @@ window.addEventListener("load",function(){
 
     //btn事件觸發執行功能
     $(".logIn").click(function(){
-        logInPage_show();
         logIn_background_hide ();
+        logInPage_show();
         login_toggle();
     });
     
     $(".signUp").click(function(){
-        SignUpPage_show();
         logIn_background_hide ();
+        SignUpPage_show();
         login_toggle();
     });
 
@@ -104,7 +104,18 @@ window.addEventListener("load",function(){
         })
     };
     cards_link();
-      
+
+    // ************ success數字加總效果 ???????************ 
+    // function countAnimate(){
+    //     document.querySelectorAll(".count").forEach(function(num){
+    //         num.Counter = 0;
+    //         let textCount = parseInt(num.textContent, 10);  //10進位
+    //         let duration = 4000;
+            
+    //     })
+    // }
+
+
      // RWD 1080======================================
     let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 

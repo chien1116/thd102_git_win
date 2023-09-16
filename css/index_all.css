@@ -328,10 +328,6 @@ a {
 }
 
 /* =========== index 首頁 ============= */
-* {
-  outline: solid 1px red;
-}
-
 .visit {
   margin-top: 20px;
   font-size: 20px;
@@ -1058,4 +1054,4 @@ p.remindText {
 
 @media (max-width: 414px) {
 
-} *//*# sourceMappingURL=index_all.css.map */
+} */

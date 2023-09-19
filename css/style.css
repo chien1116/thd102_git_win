@@ -752,7 +752,7 @@ p.remindText {
   /* ========= ========= 斷點 ====== =========== */
 }
 .index .masterVision {
-  background-image: url(../../images/header_bg.jpg);
+  background-image: url(../images/header_bg.jpg);
 }
 .index .visit {
   margin-top: 20px;
@@ -835,7 +835,7 @@ p.remindText {
 .index .main_section2 {
   width: 100%;
   /* max-width: 1400px; */
-  background-image: url("../../images/body_pic2_bg.png");
+  background-image: url("../images/body_pic2_bg.png");
   padding: 5.5% 10%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1071,7 +1071,7 @@ p.remindText {
   /* bottomSection_offic */
 }
 .about .masterVision {
-  background-image: url(../../images/about/header_bg.png);
+  background-image: url(../images/about/header_bg.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1104,7 +1104,7 @@ p.remindText {
 }
 .about .main_article1 {
   padding: 5.5% 10%;
-  background-image: url(../../images/about/main_section1_bg.png);
+  background-image: url(../images/about/main_section1_bg.png);
   color: #333;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1169,13 +1169,13 @@ p.remindText {
   border-radius: 16px;
 }
 .about .card1 {
-  background-image: url(../../images/about/cards-card1_bg.png);
+  background-image: url(../images/about/cards-card1_bg.png);
 }
 .about .card2 {
-  background-image: url(../../images/about/cards-card2_bg.png);
+  background-image: url(../images/about/cards-card2_bg.png);
 }
 .about .card3 {
-  background-image: url(../../images/about/cards-card3_bg.png);
+  background-image: url(../images/about/cards-card3_bg.png);
 }
 .about .section1 {
   padding: 100px 0 40px;
@@ -1225,7 +1225,7 @@ p.remindText {
 .about .bottomSection {
   width: 100vw;
   /* ------------------------- */
-  background-image: url(../../images/about/footer_banner_bg.png);
+  background-image: url(../images/about/footer_banner_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1372,7 +1372,7 @@ p.remindText {
   /* equipment_section */
 }
 .place .masterVision {
-  background-image: url("../../images/place/mv_bg_big.png");
+  background-image: url("../images/place/mv_bg_big.png");
   height: auto;
   padding: 80px 0 0;
 }
@@ -1463,7 +1463,7 @@ p.remindText {
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
-  background-image: url("../../images/place/arrow_down.svg");
+  background-image: url("../images/place/arrow_down.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   cursor: pointer;
@@ -1680,7 +1680,7 @@ p.remindText {
 .place .equipment_section {
   position: relative;
   width: 100%;
-  background-image: url("../../images/place/equipment_bg.png");
+  background-image: url("../images/place/equipment_bg.png");
   margin-top: 80px;
   padding: 80px 10%;
   background-repeat: no-repeat;
@@ -1777,7 +1777,7 @@ p.remindText {
   /* bottom  */
 }
 .blog .masterVision {
-  background-image: url(../../images/blog/top_bg.png);
+  background-image: url(../images/blog/top_bg.png);
   justify-content: flex-end;
 }
 .blog .title {
@@ -1905,7 +1905,7 @@ p.remindText {
   margin-bottom: 0;
 }
 .blog .bottom {
-  background-image: url(../../images/blog/bottom_bg.png);
+  background-image: url(../images/blog/bottom_bg.png);
   margin-top: -20px;
   background-size: cover;
   display: flex;
@@ -1959,7 +1959,7 @@ p.remindText {
 }
 .faq .pageContainer {
   width: 100%;
-  background-image: url(../../images/FAQ/main_bg.png);
+  background-image: url(../images/FAQ/main_bg.png);
   background-size: cover;
 }
 .faq .top {
@@ -2230,7 +2230,7 @@ p.remindText {
 }
 @media screen and (max-width: 768px) {
   .join .masterVision {
-    background-image: url("../../images/join/mv_bg.jpg");
+    background-image: url("../images/join/mv_bg.jpg");
     background-size: cover;
   }
 }
@@ -2401,7 +2401,7 @@ p.remindText {
   text-shadow: none;
 }
 .join .join_brand {
-  background-image: url(../../images/join/brand_bg.png);
+  background-image: url(../images/join/brand_bg.png);
   padding: 100px 10% 320px;
   display: flex;
   justify-content: space-between;
@@ -2468,7 +2468,7 @@ p.remindText {
   width: 28%;
 }
 .join .personal select {
-  background-image: url("../../images/join/icon_arrow_down.png");
+  background-image: url("../images/join/icon_arrow_down.png");
   background-repeat: no-repeat;
   background-position: center right 16px;
 }
@@ -2583,7 +2583,7 @@ p.remindText {
   /* space_type*/
 }
 .reservation .masterVision {
-  background-image: url(../../images/reservation/header_bg.png);
+  background-image: url(../images/reservation/header_bg.png);
   display: flex;
   justify-content: flex-end;
   padding-bottom: 120px;
@@ -2828,7 +2828,7 @@ p.remindText {
   }
 }
 .reservation .order_item select {
-  background-image: url("../../images/reservation/arrow_drop_down.svg");
+  background-image: url("../images/reservation/arrow_drop_down.svg");
   background-repeat: no-repeat;
   z-index: 10;
   background-position: right 5% center;

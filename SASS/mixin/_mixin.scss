@@ -1,0 +1,41 @@
+// @include rect(寬 ,高, 圓角); 
+@mixin size($w , $h:$w , $bdrs:null){
+    width: $w ;
+    height: $h ;
+    border-radius: $bdrs;
+}
+
+//flex 預設置中
+@mixin flex($d:row,$jc:center,$ai:center){
+    display: flex;
+    flex-direction: $d;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+//================ breakpoint ============================
+//手機板 
+@mixin m($m:468px) {
+    @media screen and (max-width: $m) {
+        @content;
+    }
+}
+// //平板 
+@mixin p($p:768px) {
+    @media screen and (max-width: $p) {
+        @content;
+    }
+}  
+//電腦1200px
+@mixin t($t:1200px) {
+    @media screen and (max-width: $t) {
+        @content;
+    }
+} 
+
+// 自定義
+@mixin d($b){
+    @media screen and (max-width: $b) {
+        @content;
+    }
+}

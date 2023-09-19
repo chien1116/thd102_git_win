@@ -1,0 +1,200 @@
+.blog{
+
+    //*{ outline: solid 1px red; }
+    /* main-vision */
+    .masterVision{
+        background-image: url(../../images/blog/top_bg.png);
+        justify-content: flex-end;
+    }
+
+
+    .title{
+        font-size: 80px;
+        font-weight: 800;
+        color:#fff;
+        margin-bottom: 80px;
+    }
+
+
+    /* article */
+    /* main */
+    .main{
+        width: 100%;
+        padding: 80px 10%;
+        border-radius: 40px;
+        background-color: #f5f5f5;
+        position: relative;
+        margin-top: -40px;
+
+
+        overflow: hidden;
+        z-index: 5;
+    }
+
+    .block{
+        @include flex(row,space-between,flex-start);
+        margin-bottom: 40px;
+        @include p(){
+            @include flex(column);
+        }
+        
+
+    }
+    .card{
+        background-color: #fff;
+        width: 30%;
+        min-width: 360px;
+        margin-right: 24px;
+        border-radius: 16px;
+        border: solid 1px #eee;
+        box-shadow: 0px 0px 20px rgba(#333,.2);
+        z-index: 10;
+        color: #333;
+        transition:0.5s;
+        @include p(){
+            width: 100%;
+            margin: 0;
+            margin-bottom: -80px;
+        }
+
+        &:hover{
+            box-shadow: 0px 0px 40px rgba(133, 133, 133, 0.2);
+            z-index: 10;
+            transform:scale(1.05) translate( 0,8px);
+        }
+    }
+  
+    .blog_pic{
+        font-size: 0;
+        overflow: hidden;
+        border-radius: 16px;
+        @include flex();
+        
+        @include p(){
+            width: 100%;
+        }
+    }
+
+
+    .stars,.links,.booking,.pic{
+        font-size: 0;
+    }
+    .stars{
+        margin: 40px 40px 20px 40px;
+        
+    }
+    .card>p{
+        margin: 0 40px ;
+        margin-bottom: 20px;
+    }
+    .author{
+        margin: 0 32px ;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .author .name{
+        margin-bottom: 4px;
+        font-weight: 600;
+    }
+    .person_info{
+        display: flex;
+    }
+
+    .author .pic{
+    margin-right: 16px;
+    }
+    .links{
+        display: flex;
+        align-items: end;
+    }
+    .links .share{
+        margin-left: 16px;
+    }
+    a.booking{
+        display: flex;
+        margin-top: 32px;
+        justify-content: center;
+        padding: 16px;
+        border-radius: 0 0 16px 16px;
+        background-color: #E0B327;
+        text-decoration: none;
+        color:#333;
+        transition:0.5s;
+    }
+    a.booking:hover{
+        box-shadow: inset 0 2px  2px rgba(87, 86, 86, 0.2);
+        background-color: #333;
+        color:#eee;
+    }
+
+
+    .booking img{
+        margin-right: 20px;
+    }
+
+    .booking .title_sm{
+        margin-bottom: 0;
+    }
+
+    /* section*/
+    /* bottom  */
+    .bottom{
+        background-image: url(../../images/blog/bottom_bg.png);
+        margin-top: -20px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        padding: 115px 0;
+        color: #fff;
+        text-shadow:2px 0px 10px rgba(87, 86, 86, 0.2);
+
+    }
+    .customer_service{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .bottom .customer_service .title_sm{
+        
+    }
+    .bottom .person_detail{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+
+    }
+
+    .bottom .person_info{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .bottom .btn{
+        text-shadow:none;
+        text-align: center;
+        margin-top: 40px;
+        width: 100%;
+    
+    }
+    .bottom .btn .title_sm{
+        margin-bottom: 0;
+        
+    }
+    .bottom .person_info .pic{
+        margin-right: 40px;
+        
+        
+    }
+    .bottom .person_info .name{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        
+    }
+
+}

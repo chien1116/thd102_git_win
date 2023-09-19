@@ -1,0 +1,1 @@
+window.addEventListener("load",function(){document.getElementById("about").classList.add("nowPage")});

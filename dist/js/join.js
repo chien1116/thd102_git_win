@@ -1,0 +1,1 @@
+window.addEventListener("load",function(){document.getElementById("join").classList.add("nowPage")});

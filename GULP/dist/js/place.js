@@ -1,1 +1,0 @@
-window.addEventListener("load",function(){document.getElementById("place").classList.add("nowPage"),function(){"use strict";$(".owl-carousel").owlCarousel({items:5,loop:!0,margin:0,margin:40,autoplay:!0,autoplayTimeout:4e3,smartSpeed:1500,autoplayHoverPause:!0,center:!0,dots:!1,responsive:{0:{items:1},768:{items:2.5},1400:{items:3}}})}()});

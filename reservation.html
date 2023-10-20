@@ -13,8 +13,11 @@
      <link rel="stylesheet" href="http://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css">
      <!-- font-awasome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <!-- flatpickr -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
      <!-- css -->
      <link rel="stylesheet" href="./css/style.css">
+
 
 
 
@@ -95,9 +98,9 @@
         <input type="submit" id="btn_signUp" class="logButton" value="Sign Up">
 
         <p class="remindText">註冊即表示您已閱讀並同意 
-            <a href="../FAQ.html">服務條款</a> 
+            <a href="./FAQ.html">服務條款</a> 
             <span>及</span> 
-            <a href="../FAQ.html">隱私權政策</a>
+            <a href="./FAQ.html">隱私權政策</a>
         </p>
             
     </form>
@@ -153,77 +156,76 @@
         
 
             <!-- main article -->
-            <main>
-                <div class="main">
-                    <div class="left">
-                        <div class="titleText">
-                            <h2 class="title_md">
-                                Space Name Space Name
-                            </h2>
-                            <h3 class="price">
-                                4000 € / day
-                            </h3>
+            <main class="main">
+                <div class="left">
+                    <div class="titleText">
+                        <h2 class="title_md">
+                            Space Name Space Name
+                        </h2>
+                        <h3 class="price">
+                            4000 € / day
+                        </h3>
+                    </div>
+                    
+                    
+                    <!-- icon -->
+                    <div class="servers">
+                        <div class="server_item">
+                            <div class="icon_service">
+                                <img src="./images/reservation/icon_wheelchair.svg" alt="">
+                            </div>
+                            <div class="serveText">
+                                Wheel Chair
+                            </div>
+                        </div>
+    
+                        <div class="server_item">
+                            <div class="icon_service">
+                                <img src="./images/reservation/icon_wifi.svg" alt="">
+                            </div>
+                            <div class="serveText">
+                                Wi-Fi
+                            </div>
+                        </div>
+    
+                        <div class="server_item none-server">
+                            <div class="icon_service">
+                                <img src="./images/reservation/icon_visa.svg" alt="">
+                            </div>
+                            <div class="serveText">
+                                Credit Card
+    
+                            </div>
                         </div>
                         
+                        <div class="server_item">
+                            <div class="icon_service">
+                                <img src="./images/reservation/icon_laptop.svg" alt="">
+                            </div>
+                            <div class="serveText">
+                                Laptop
+                            </div>
+                        </div>
                         
-                        <!-- icon -->
-                        <div class="servers">
-                            <div class="server_item">
-                                <div class="icon_service">
-                                    <img src="./images/reservation/icon_wheelchair.svg" alt="">
-                                </div>
-                                <div class="serveText">
-                                    Wheel Chair
-                                </div>
+                        <div class="server_item">
+                            <div class="icon_service">
+                                <img src="./images/reservation/icon_café.svg" alt="">
                             </div>
-        
-                            <div class="server_item">
-                                <div class="icon_service">
-                                    <img src="./images/reservation/icon_wifi.svg" alt="">
-                                </div>
-                                <div class="serveText">
-                                    Wi-Fi
-                                </div>
+                            <div class="serveText">
+                                café
                             </div>
-        
-                            <div class="server_item">
-                                <div class="icon_service">
-                                    <img src="./images/reservation/icon_visa.svg" alt="">
-                                </div>
-                                <div class="serveText">
-                                    Credit Card
-        
-                                </div>
+                        </div>
+    
+                        <div class="server_item none-server">
+                            <div class="icon_service">
+                                <img src="./images/reservation/icon_bath.svg" alt="">
                             </div>
-                            
-                            <div class="server_item">
-                                <div class="icon_service">
-                                    <img src="./images/reservation/icon_laptop.svg" alt="">
-                                </div>
-                                <div class="serveText">
-                                    Laptop
-                                </div>
+                            <div class="serveText">
+                                Bath
                             </div>
-                            
-                            <div class="server_item">
-                                <div class="icon_service">
-                                    <img src="./images/reservation/icon_café.svg" alt="">
-                                </div>
-                                <div class="serveText">
-                                    café
-                                </div>
-                            </div>
-        
-                            <div class="server_item">
-                                <div class="icon_service">
-                                    <img src="./images/reservation/icon_bath.svg" alt="">
-                                </div>
-                                <div class="serveText">
-                                    Bath
-                                </div>
-                            </div>
+                        </div>
 
-                        </div>
+                    </div>
 
                     <!-- section -->
                     <!-- rule -->
@@ -234,7 +236,7 @@
                             </h4>
                             <p>
                                 Work From Here selects the best of these spaces and transforms them into pop-up communities of independent creatives, entrepreneurs, and freelancers.<br>
-                                If you need more information, pleace check in our <a href="../page_FAQ/FAQ.html" target="_blank">FAQ</a>
+                                If you need more information, pleace check in our <a href="./page_FAQ/FAQ.html" target="_blank">FAQ</a>
                                     
                             </p>
                         </div>        
@@ -242,138 +244,141 @@
 
                     <!-- section -->
                     <!-- order -->
-                        <section>
-                            <div class="order_info">
-                                <h4 class="title_sm">
-                                    ORDER INFO
-                                </h4>
-                                <div class="order_detail">
+                    <section>
+                        <div class="order_info">
+                            <h4 class="title_sm">
+                                ORDER INFO
+                            </h4>
+                            <div class="order_detail">
 
-                                    <div class="order_name">
-                                        <div class="firstName">
-                                            <label>
-                                                First Name
-                                            </label>  
-                                            <input type="text" placeholder="First Name"> 
-                                        </div>
-                                        <div class="lastName">
-                                            <label>Last Name</label>  
-                                            <input type="text" placeholder="First Name"> 
-                                        </div> 
+                                <div class="order_name">
+                                    <div class="firstName">
+                                        <label>
+                                            First Name
+                                        </label>  
+                                        <input type="text" placeholder="First Name"> 
                                     </div>
-
-                                    <div class="moble">
-                                        <label>Mobile Number</label>  
-                                        <input type="text" placeholder="ex. 0912345678"> 
-                                    </div>
-
-                                    <div class="email">
-                                        <label>E-mail Address</label>  
-                                        <input type="text" placeholder="ex.  E-mail@mail.com"> 
-                                    </div>
-
-                                    <div class="bill">
-                                        <label>Billing Address</label>  
-                                        <input type="text" placeholder="ex. 113 location address, 113 location address, 113 location address."> 
-                                    </div>
-
+                                    <div class="lastName">
+                                        <label>Last Name</label>  
+                                        <input type="text" placeholder="First Name"> 
+                                    </div> 
                                 </div>
-                            </div>        
-                        </section>
-                        
-                        <!-- section -->
-                        <!-- locate -->
-                        <section>
-                            
-                            <div class="locate">
-                                <h4 class="title_sm">
-                                    LOCATION
-                                </h4>  
-                                <p>
-                                    113 location address, 113 location address, 113 location address.
-                                </p>
 
-                                <div class="map">
-                                    <img src="./images/reservation/googlemap.png" alt="">
-                                </div>  
+                                <div class="moble">
+                                    <label>Mobile Number</label>  
+                                    <input type="text" placeholder="ex. 0912345678"> 
+                                </div>
+
+                                <div class="email">
+                                    <label>E-mail Address</label>  
+                                    <input type="text" placeholder="ex.  E-mail@mail.com"> 
+                                </div>
+
+                                <div class="bill">
+                                    <label>Billing Address</label>  
+                                    <input type="text" placeholder="ex. 113 location address, 113 location address, 113 location address."> 
+                                </div>
+
                             </div>
-                        </section>
+                        </div>        
+                    </section>
+                    
+                    <!-- section -->
+                    <!-- locate -->
+                    <section>
+                        
+                        <div class="locate">
+                            <h4 class="title_sm">
+                                LOCATION
+                            </h4>  
+                            <p>
+                                113 location address, 113 location address, 113 location address.
+                            </p>
 
+                            <div class="map" id="map"></div>  
+
+                        </div>
+                    </section>
+
+                </div>
+                
+            
+                <!-- right -->
+                <div class="right">
+
+                    <div class="booking_info">
+                        <div class="bookDate">
+                            <input type="text" class="calendar" id="calendar" placeholder="select date...">
+                            
+                            <i class="fa-regular fa-calendar-check"></i>   
+                        </div>
+                        
+                        <div class="orderList">
+                            <div class="order_item capacity">
+                                <select id="order" class="order">
+                                    <option value="" id="1" selected disabled>
+                                        Capacity
+                                    </option>
+                                    <option value="less" id="1-10">
+                                        1-10
+                                    </option>
+                                    <option value="medium" id="由10-20">
+                                        10-50 
+                                    </option>
+                                    <option value="large" id="由10-20">
+                                        50-100
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="order_item type">
+
+                                <select id="order" class="order">
+                                    <option value="" id="1" selected disabled>
+                                        Space Type
+                                    </option>
+                                    <option value="Office" id="Office">
+                                        Office Space
+                                    </option>
+                                    <option value="Co-working" id="Co-working">
+                                        Co-working
+                                    </option>
+                                    <option value="Activity" id="Activity Space">
+                                        Activity Space
+                                    </option>
+                                    <option value="Meeting" id="Meeting">
+                                        Meeting Room
+                                    </option>
+                                </select>
+
+                            </div>
+                            <div class="order_item quipment">
+                                <select id="order" class="order">
+                                    <option value="" id="1" selected disabled>
+                                        Equipment
+                                    </option>
+                                    <option value="mic" id="mics">
+                                        mic 
+                                    </option>
+                                    <option value="audio and video
+                                    " id="audio and video
+                                    ">
+                                        audio and video
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     
-                
-                    <!-- right -->
-                    <div class="right">
-                        <div class="booking_info">
-                            <div class="calendar">
-                                <img src="./images/reservation/calendar.png" alt="">
-                            </div>
-                            <div class="orderList">
-                                <div class="order_item capacity">
-                                    <select id="order" class="order">
-                                        <option value="" id="1" selected disabled>
-                                            Capacity
-                                        </option>
-                                        <option value="less" id="1-10">
-                                            1-10
-                                        </option>
-                                        <option value="medium" id="由10-20">
-                                            10-50 
-                                        </option>
-                                        <option value="large" id="由10-20">
-                                            50-100
-                                        </option>
-                                    </select>
-                                </div>
-    
-                                <div class="order_item type">
-    
-                                    <select id="order" class="order">
-                                        <option value="" id="1" selected disabled>
-                                            Space Type
-                                        </option>
-                                        <option value="Office" id="Office">
-                                            Office Space
-                                        </option>
-                                        <option value="Co-working" id="Co-working">
-                                            Co-working
-                                        </option>
-                                        <option value="Activity" id="Activity Space">
-                                            Activity Space
-                                        </option>
-                                        <option value="Meeting" id="Meeting">
-                                            Meeting Room
-                                        </option>
-                                    </select>
-    
-                                </div>
-                                <div class="order_item quipment">
-                                    <select id="order" class="order">
-                                        <option value="" id="1" selected disabled>
-                                            Equipment
-                                        </option>
-                                        <option value="mic" id="mics">
-                                            mic 
-                                        </option>
-                                        <option value="audio and video
-                                        " id="audio and video
-                                        ">
-                                            audio and video
-                                        </option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="btns">
-                            <a href="#" class="btn login">Log In To Reserve</a> 
-                            <a href="#" class="btn comfirm">Comfirm Your Space</a> 
-                        </div>
-
-                        <div class="title_md booked">
-                            Booked successfully !
-                        </div>
+                    <div class="btns">
+                        <a href="#" class="btn login">Log In To Reserve</a> 
+                        <a href="#" class="btn comfirm">Comfirm Your Space</a> 
                     </div>
+
+                    <div class="title_md booked">
+                        Booked successfully !
+                    </div>
+            
                 </div>
             </main>
 
@@ -606,8 +611,8 @@
             
             <div class="remindInfo">
                 <p>WFW[here]-2023</p>
-                <a href="../FAQ.html">條款與條件</a>
-                <a href="../FAQ.html">隱私政策</a>
+                <a href="./FAQ.html">條款與條件</a>
+                <a href="./FAQ.html">隱私政策</a>
             </div>
             <a href="#" class="backToTop">
                 <p>Back to top</p>
@@ -624,6 +629,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- OwlCarousel2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- googlemap -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy5_SjUbRXayyiYVb9QaQSlRUW6CSM5Io&callback=initMap"></script>
     <!-- js -->
     <script src="./js/login.js"></script>
     <script src="./js/all.js"></script>
